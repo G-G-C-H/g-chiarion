@@ -1,0 +1,176 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "FT88-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Bold.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-Expanded";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Expanded.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-Gothique";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Gothique.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-Italic";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Italic.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Regular.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-School";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-School.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "FT88-Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/FT88-Serif.woff2"format('woff2');
+}
+
+@font-face {
+  font-family: "Director-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: "webfonts/Director-Regular.woff2"format('woff2');
+}
+
+body {
+  /* background-color: black; */
+  text-align: center;
+  align-items: center;
+  overflow-y: scroll;
+  line-height: 300%;
+}
+
+.content {
+  position: relative;
+  height: 80%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "FT88-Expanded" ;
+  text-shadow: 5px 5px red ;
+  color: hotpink ;
+  font-size: 4em ;
+  /* border: 10px dotted mediumspringgreen; */
+}
+
+a {
+  color: mediumspringgreen;
+  font-family: "FT88-School" ;
+}
+
+.center-box {
+  margin: auto;
+}
+
+.list-of-works {
+  color: yellow;
+  font-family: "FT88-Serif";
+  border: 2px solid limegreen;
+  margin: 2.5%;
+  background-color: black;
+  font-size: 2em;
+  padding: 0.5%;
+}
+
+.thought-1 {
+  color: lavender;
+  font-family: "FT88-Gothique";
+  border: 2px solid orchid;
+  padding: 1%;
+  margin: 2%;
+  width: 50%;
+  background-color: indigo;
+  font-size: 1.2em;
+}
+
+.thought-2 {
+  color: powderblue;
+  font-family: "FT88-Gothique";
+  border: 2px solid mistyrose;
+  padding: 1%;
+  margin: 2%;
+  width: 70%;
+  background-color: plum;
+  font-size: 1.2em;
+}
+
+.legible {
+  font-family: "Director-Regular";
+}
+
+.container {
+  display: none;
+  z-index: 1000;
+  border: 4px dotted peachpuff;
+  padding: 20px;
+  background-color: mintcream;
+  width: 500px;
+  text-align: justify;
+  color: black;
+  font-size: 1em;
+  font-family: "Director-Regular";
+  line-height: 1.5em;
+}
+
+#first-container {
+  top: 30%;
+  left: 55%;
+  position: absolute;
+}
+
+#myVideo {
+  /* position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; */
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+/* minimum viable way of making a website mobile friendly */
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
